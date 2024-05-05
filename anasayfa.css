@@ -1,16 +1,223 @@
-.profildiv{
-width: 50%;
-margin-top: 34px;
-text-align: center;
-border: 2px solid rgba(1, 255, 2555, .1);
-backdrop-filter: blur(10px);
+.profildiv {
+    text-align: center;
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 10%;
+    border: 2px solid rgb(237, 3, 140);
+    border-radius: 15px;
+    padding: 60px 60px;
 
-border-radius: 10px;
-padding: 50px 50px;
+    background-size: cover;
+    background: url(resim/ai-generated-8630058_1920.jpg);
+    background-position: center;
+    overflow: hidden; 
 
-background: url(resim/images1.jpg) no-repeat;
-background-size: cover;
+    padding-top: 115px;
+
+}
+
+body {
+    background: url(resim/ai-generated-8524928_1920.png);
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+
+}
+
+.header1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana, sans-serif;
+   
+    background: url(resim/ai-generated-8662021_1920.jpg);
+    color: #f4eded;
+    padding: 15px 0;
+
+    background-position: center;
+
+}
 
 
 
+.nav1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ul1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li1 {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.a1 {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    background: transparent;
+    border: 2px solid rgba(255, 25, 2555, .2);
+    backdrop-filter: blur(55px);
+    box-shadow: 0 0 10px rgb(26, 181, 238);
+    padding: 8px 12px;
+}
+
+.a1:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(51, 238, 26);
+    color: #7e06ff;
+}
+
+.profil {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.profil h2 {
+    color: #282525;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.profil p {
+    color: #1d1c1c;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sosyal-medya {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.sosyal-medya li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.sosyal-medya a {
+    font-size: large;
+    color: #fff;
+
+
+}
+
+.sosyal-medya i {
+    font-size: 24px;
+    color: #610ac5;
+}
+
+.smedialink {
+
+    padding: 2px 2px;
+    width: 90%;
+    margin-left: 5%;
+    background: transparent;
+    border: 2px solid rgba(255, 25, 2555, .2);
+    backdrop-filter: blur(19px);
+    box-shadow: 0 0 10px rgb(233, 106, 218);
+    border-radius: 10px;
+}
+
+.pp {
+
+    padding: 2px 2px;
+    width: 40%;
+    margin-left: 30%;
+    background: transparent;
+    border: 1px solid rgba(255, 25, 2555, .1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgb(176, 226, 214);
+    border-radius: 80px;
+    background-position: center;
+
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+     height: auto;
+    background: transparent;
+    border: 1px solid rgba(255, 25, 2555, .1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(176, 226, 214);
+
+
+}
+.slider {
+    margin-top: 70px;
+    width: 88%;
+    margin-left: 6%;
+    margin-bottom: 4px;
+    border: 1px solid rgba(255, 25, 2555, .1);
+    box-shadow: 0 0 10px rgb(176, 226, 214);
+    height: 650px; 
+    overflow: hidden;
+    position: relative; 
+}
+
+.resimler {
+    display: flex; 
+    justify-content: space-between;
+    transition: transform 0.7s ease; 
+
+}
+
+.resimler img {
+    width: 100%; 
+   height:auto;
+}
+
+.ileri, .geri {
+    position: relative;
+    padding: 10px 20px;
+    
+    margin: 10px;
+    border: none;
+    border-radius: 10%;
+    width: 20%;
+    margin-left: 20%;
+}
+
+.ileri {
+
+    background-color: #23b1d1;
+     box-shadow: 0 0 10px rgb(237, 230, 31);
+    color: rgb(7, 7, 7);
+}
+
+.geri {
+  
+    background-color: #b5d349;
+    box-shadow: 0 0 10px rgb(251, 255, 9);
+    color: black;
+}
+
+.footer {
+    
+    text-align: right; /* Metni footer'ın ortasına hizala */
+    padding: 8px;
+
+
+    background: url(resim/hob4.jpg);
+   background-position: center;
+    margin-top: 50px; /* Footer'ı slider'ın altına yerleştir */
 }
