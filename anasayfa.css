@@ -63,14 +63,14 @@ body {
     background: transparent;
     border: 2px solid rgba(255, 25, 2555, .2);
     backdrop-filter: blur(55px);
-    box-shadow: 0 0 10px rgb(26, 181, 238);
+    box-shadow: 0 0 10px rgb(13, 216, 243);
     padding: 8px 12px;
 }
 
 .a1:hover {
     background-color: #ddd;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(51, 238, 26);
+    box-shadow: 0 0 10px rgb(231, 238, 26);
     color: #7e06ff;
 }
 
@@ -157,10 +157,16 @@ body {
      height: auto;
     background: transparent;
     border: 1px solid rgba(255, 25, 2555, .1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     box-shadow: 0 0 10px rgb(176, 226, 214);
 
 
+}
+.container p{
+
+font-weight: 400;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
 }
 .slider {
     margin-top: 70px;
