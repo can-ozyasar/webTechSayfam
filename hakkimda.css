@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
-    background: url(resim/ai-generated-8630058_1920.jpg);
+    background: url(resim2/hakkımdaFon.jpg);
     margin: 0;
     padding: 0;
 }
@@ -10,8 +10,11 @@ body {
     max-width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fffdfd;
     border: 1px solid rgba(255, 244, 255, .1);
+   
+      backdrop-filter: blur(49px);
+
+    
 
     box-shadow: 0 0 10px rgb(175, 215, 32);
 
@@ -20,11 +23,12 @@ body {
 h1 {
     padding-top: 100px;
     color: #000000;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
-    color: #666;
+    color: #000000;
 }
 
 .portfolio-item {
@@ -36,12 +40,12 @@ p {
 
 .portfolio-item h2 {
     font-size: 18px;
-    color: #444;
+    color: #030202;
 }
 
 .portfolio-item p {
     font-size: 14px;
-    color: #777;
+    color: #090909;
 }
 
 
@@ -70,66 +74,54 @@ p {
 
 }
 
-.header1 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana, sans-serif;
-
-    background: url(resim/synthetic-8597464_1920.jpg);
-    color: #f4eded;
-    padding: 15px 0;
-
-    background-position: center;
-
-}
-
-
-
-.nav1 {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.ul1 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.li1 {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.a1 {
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    background: transparent;
-    border: 2px solid rgba(255, 25, 2555, .2);
-    backdrop-filter: blur(55px);
-    box-shadow: 0 0 10px rgb(13, 243, 201);
-    padding: 8px 12px;
-}
-
-.a1:hover {
-    background-color: #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(51, 238, 26);
-    color: #7e06ff;
-}
 a{
 
 
-    color: #ff0676e4;
+    color: #ff0073;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 a:hover{
 
 
-    color: #15b2bd;
+    color: #09c29d;
 }
 
 
 
+.footer {
+    
+    text-align: right; /* Metni footer'ın ortasına hizala */
+    padding: 8px;
+
+
+    background: url(resim/hob4.jpg);
+   background-position: center;
+    margin-top: 50px; /* Footer'ı slider'ın altına yerleştir */
+}
+.navbar-brand{
+
+    color: red;
+    margin-left: 20px;
+    padding-right: 60%;    
+}
+.navbar-brand:hover{
+
+
+    
+        color: rgb(255, 0, 0); /* Kırmızı */
+        text-shadow: 1px 2px 4px rgb(161, 234, 161); /* Yeşil gölge */
+        animation: colorchange 1s infinite;
+}
+      
+      @keyframes colorchange {
+        0% {
+          color: rgb(210, 93, 14);
+        }
+        50% {
+          color: rgba(15, 199, 209, 0.844);
+        }
+        100% {
+          color: rgba(173, 9, 210, 0.782);
+        }
+      }
 

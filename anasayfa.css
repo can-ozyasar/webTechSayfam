@@ -25,52 +25,24 @@ body {
 
 }
 
-.header1 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana, sans-serif;
-   
-    background: url(resim/ai-generated-8662021_1920.jpg);
-    color: #f4eded;
-    padding: 15px 0;
-
-    background-position: center;
-
-}
 
 
-
-.nav1 {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.ul1 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.li1 {
-    display: inline-block;
-    margin: 0 15px;
-}
 
 .a1 {
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
-    background: transparent;
+    background-color: #23b1d1;
     border: 2px solid rgba(255, 25, 2555, .2);
     backdrop-filter: blur(55px);
-    box-shadow: 0 0 10px rgb(26, 181, 238);
+    box-shadow: 0 0 10px rgb(13, 216, 243);
     padding: 8px 12px;
 }
 
 .a1:hover {
     background-color: #ddd;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(51, 238, 26);
+    box-shadow: 0 0 10px rgb(231, 238, 26);
     color: #7e06ff;
 }
 
@@ -118,23 +90,51 @@ body {
 
 
 }
+.sosyal-medya a:hover {
+    padding-right:11px;
+    padding-left:11px;
+   font-size: 21px;
+  
+
+    text-shadow: 2px 2px 5px rgb(79, 74, 74); 
+    animation: colorchange 2s infinite;
+
+}
+
+
+  @keyframes colorchange {
+    0% {
+      color: rgb(195, 84, 11);
+    }
+    50% {
+      color: rgba(7, 156, 164, 0.56);
+    }
+    100% {
+      color: rgba(138, 33, 161, 0.782);
+    }
+  }
 
 .sosyal-medya i {
     font-size: 24px;
-    color: #610ac5;
+    color: #000000;
 }
+
+
 
 .smedialink {
 
     padding: 2px 2px;
-    width: 90%;
-    margin-left: 5%;
+    width: 98%;
+    margin-left: 1%;
     background: transparent;
     border: 2px solid rgba(255, 25, 2555, .2);
     backdrop-filter: blur(19px);
     box-shadow: 0 0 10px rgb(233, 106, 218);
     border-radius: 10px;
 }
+
+
+
 
 .pp {
 
@@ -157,10 +157,16 @@ body {
      height: auto;
     background: transparent;
     border: 1px solid rgba(255, 25, 2555, .1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     box-shadow: 0 0 10px rgb(176, 226, 214);
 
 
+}
+.container p{
+
+font-weight: 400;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
 }
 .slider {
     margin-top: 70px;
@@ -213,11 +219,37 @@ body {
 
 .footer {
     
-    text-align: right; /* Metni footer'ın ortasına hizala */
+    text-align: right; 
     padding: 8px;
 
 
     background: url(resim/hob4.jpg);
    background-position: center;
-    margin-top: 50px; /* Footer'ı slider'ın altına yerleştir */
+    margin-top: 50px; }
+
+.navbar-brand{
+    color: red;
+    margin-left: 20px;
+    padding-right: 60%;
 }
+
+.navbar-brand:hover{
+
+
+    
+        color: #f00; 
+        text-shadow: 2px 2px 5px rgb(146, 248, 221); 
+        animation: colorchange 2s infinite;
+}
+      
+      @keyframes colorchange {
+        0% {
+          color: rgb(255, 127, 42);
+        }
+        50% {
+          color: rgba(0, 242, 255, 0.652);
+        }
+        100% {
+          color: rgba(206, 41, 243, 0.782);
+        }
+      }
