@@ -22,7 +22,7 @@ body {
 
 
 
-.wrapper {
+.cerceve {
     width: 420px;
     background: transparent;
     border: 3px solid rgba(255, 255, 2555, .2);
@@ -33,19 +33,19 @@ body {
     padding: 30px 40px;
 }
 
-.wrapper h1 {
+.cerceve h1 {
     font-size: 36px;
     text-align: center;
 }
 
-.wrapper .input-box {
+.cerceve .giris-kutusu {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input {
+.giris-kutusu input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -58,12 +58,12 @@ body {
     padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder {
+.giris-kutusu input::placeholder {
 
     color: #fff;
 }
 
-.input-box i {
+.giris-kutusu i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -71,30 +71,30 @@ body {
     font-size: 20px;
 }
 
-.wrapper .remember-forgot {
+.cerceve .beni-hatirla {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.remember-forgot label input {
+.beni-hatirla label input {
 
     accent-color: #fff;
     margin-right: 3px;
 }
 
-.remember-forgot a {
+.beni-hatirla a {
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgot a:hover {
+.beni-hatirla a:hover {
 
     text-decoration: underline;
 }
 
-.wrapper .btn {
+.cerceve .btn {
     width: 100%;
     height: 45px;
     background: #fff;
@@ -108,7 +108,7 @@ body {
     font-weight: 600;
 }
 
-.wrapper .register-link {
+.cerceve .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
