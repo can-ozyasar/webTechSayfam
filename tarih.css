@@ -1,51 +1,188 @@
+
+
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#slideshow {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.slide {
+    background-color: #eee;
+  }
+  
+  
+  
+  .container {
+    
+    margin-top: 110px;
+    flex: 1;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.slide img {
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    border-radius: 50px;
+  }
+  
+  #slide {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
-}
-
-.caption {
+    margin-top: 50px;
+  }
+  
+  .item {
+    
+    width: 100px;
+    height: 150px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.7s;
+    background-size: cover;
     position: absolute;
-    bottom: 0;
+    top: 15%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #2c52fa;
+  }
+  
+  .item:nth-child(1),
+  .item:nth-child(2) {
     left: 0;
-    background: rgba(15, 14, 14, 0.715);
-    color: white;
-    padding: 10px;
-
-}
-
-.nav-buttons {
+    top: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 5px #2cfad8;
+    
+  
+  }
+  
+  .item:nth-child(3) {
+    left: 77%;
+  }
+  
+  .item:nth-child(4) {
+    left: calc(77% + 100px);
+  }
+  
+  .item:nth-child(5) {
+    left: calc(75% + 220px);
+  }
+  
+  .item:nth-child(n+6) {
+    left: calc(10% + 660px);
+    opacity: 0;
+  }
+  
+  .item .content {
     position: absolute;
-    bottom: 15px;
-    right: 10px;
-}
-
-.nav-buttons button {
-    background: none;
+    top: calc(100% + 20px) ;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+    color: #f7f7f7;
+    padding: 8px;
+    border-radius: 20px;
+    background: url(resim/ai-generated-8524928_1920.png);
+    transform: translate(0, -50%);
+    display: none;
+    box-shadow: 0 4px 15px #e410e8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .item:nth-child(2) .content {
+    display: block;
+    z-index: 1;
+  }
+  
+  .item .name {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+  }
+  
+  .item .des {
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+  }
+  
+  .item button {
+    padding: 10px 20px;
     border: none;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    margin: 0 20px;
-}
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+  }
+  
+  
+  @keyframes showcontent {
+    from {
+      opacity: 0;
+      transform: translate(0, 100px);
+      filter: blur(33px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+      filter: blur(0);
+    }
+  }
+  
+  .buttons {
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+    width: 100%;
+    padding-left: 85%;
+  }
+  
+  .buttons button {
+    background: #50d7d7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    transition: 0.5s;
+  }
+  
+  .buttons button:hover {
+    background-color: #bac383;
+  }
+  
+  
+  .navbar-brand {
+    color: red;
+    margin-left: 20px;
+    padding-right: 60%;
+  }
+  
+  .navbar-brand:hover {
+  
+    color: #f00;
+    text-shadow: 2px 2px 5px rgb(146, 248, 221);
+    animation: colorchange 2s infinite;
+  }
+  
+  @keyframes colorchange {
+    0% {
+      color: rgb(255, 127, 42);
+    }
+  
+    50% {
+      color: rgba(0, 242, 255, 0.652);
+    }
+  
+    100% {
+      color: rgba(206, 41, 243, 0.782);
+    }
+  }
+  
+  .footer {
+    text-align: right;
+    padding: 8px;
+    background: url(resim/hob4.jpg);
+    bottom: 0;
+    background-position: center;
+    width: 100%;
+    margin-top: 70%;
+  }
