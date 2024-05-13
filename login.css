@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+
+.reenie-beanie-regular {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(resim/ai-generated-8662021_1920.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.cerceve {
+
+    margin: auto;
+    margin-top: 8%;
+    width: 30%;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.cerceve h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.cerceve .giris-kutusu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.giris-kutusu input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.giris-kutusu input::placeholder {
+
+    color: #fff;
+}
+
+.giris-kutusu i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.cerceve .beni-hatirla {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.beni-hatirla label input {
+
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.beni-hatirla a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.beni-hatirla a:hover {
+
+    text-decoration: underline;
+}
+
+.cerceve .btn {
+    width: 80%;
+    margin-left: 10%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(238, 7, 7, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.cerceve .btn:hover {
+    margin-left: 25%;
+    width: 50%;
+    opacity: 0.9;
+     background: url(resim/ai-generated-8524928_1920.png);
+    background-position: center;
+}
+
+.cerceve .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.hata-mesaji {
+
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: rgb(251, 251, 252);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+
+.footer {
+
+    width: 100%;
+    font-size: large;
+    text-align: right;
+    padding: 4px;
+    background: url(resim/hob4.jpg);
+    background-position: center;
+    position: fixed;
+    bottom: 0px;
+    opacity: 0.8;
+}
+
+
+.navbar-brand {
+    color: red;
+    margin-left: 20px;
+    padding-right: 60%;
+}
+
+.navbar-brand:hover {
+
+    color: #f00;
+    text-shadow: 2px 2px 5px rgb(146, 248, 221);
+    animation: colorchange 2s infinite;
+}
+
+
+
+.nav-item a:hover {
+
+    color: #f00;
+    font-size: large;
+
+
+}
+
+@keyframes colorchange {
+    0% {
+        color: rgb(255, 127, 42);
+    }
+
+    50% {
+        color: rgba(0, 242, 255, 0.652);
+    }
+
+    100% {
+        color: rgba(206, 41, 243, 0.782);
+    }
+}
+
+@media (max-width: 550px) {
+
+
+
+    .cerceve {
+        width: 90%;
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 550px) {
+
+
+
+    .cerceve {
+        margin-top: 150px;
+        width: 70%;
+
+    }
+}
+
+@media (min-width: 1000px) {
+
+
+    .cerceve {
+        margin-top: 70px;
+        width: 30%;
+
+    }
+
+}
