@@ -1,0 +1,135 @@
+*{
+
+
+
+}
+body{
+
+  background:url(resim2/pexels-hngstrm-1939485\ \(1\).jpg);
+  background-size: 60%;}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.movie-card {
+  background: #fff;
+  width: calc(25% - 20px);
+  /* 4 sütunlu düzen için */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-title {
+  background: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.imdb-rating {
+  background: #fff;
+  margin-top: 5px;
+  color: green;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: red;
+  margin-left: 20px;
+  padding-right: 60%;
+}
+
+
+
+#fetch-button {
+  background: url(resim2/indir.jpeg);
+  background-size: 100%;
+  margin-top: 50px;
+  margin-left: 2%;
+  color: rgb(255, 249, 249);
+  font-size: xx-large;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 20%;
+  height: 120px;
+  border-radius: 10px;
+
+}
+
+.navbar-brand:hover {
+  color: #f00;
+  text-shadow: 2px 2px 5px rgb(146, 248, 221);
+  animation: colorchange 2s infinite;
+}
+
+.footer {
+
+  width: 100%;
+  text-align: right ;
+   padding: 4px;
+  background: url(resim/hob4.jpg);
+  background-position: center;
+  margin-top: 50px;
+ 
+}
+.footer p{
+  background:url(resim/hob4.jpg);
+  background-position: center;
+
+}
+
+
+.nav-item a:hover {
+
+  color: #f00;
+  font-size: large;
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .movie-card {
+    width: calc(33.33% - 10px);
+    /* 3 sütunlu düzen için */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: calc(50% - 10px);
+    /* 2 sütunlu düzen için */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  #fetch-button {
+
+width: 90%;
+margin-left: 5%;
+margin-bottom: 30px;
+
+
+  }
+  .movie-card {
+    width: 100%;
+    /* Tam genişlikli düzen */
+    margin-right: 0;
+  }
+}
