@@ -7,7 +7,6 @@
   <title>İletişim</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -18,11 +17,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playpen+Sans&family=Poetsen+One&family=Reenie+Beanie&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">CanOZ</a>
@@ -35,7 +32,6 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="login.html">Giriş</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
           </li>
@@ -57,56 +53,49 @@
           <li class="nav-item">
             <a class="nav-link" href="yemek.html">Gastronomi</a>
           </li>
-
         </ul>
       </div>
     </div>
   </nav>
 
-
-
-
-
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781.2857712386837!2d27.14043990609784!3d38.43816383090076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd85b1ee6cb8d%3A0x6a9bc8cd5752e270!2sKordon%20Alsancak%20Izmir!5e0!3m2!1str!2str!4v1715360758084!5m2!1str!2str"
     style="margin-bottom: 30px;" width="100%" height="400px" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-  <div class="sosyal">
-    <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #e7f305;"></i>instagram</a>
-    <a href=""><i class="fa-brands fa-x-twitter fa-2xl" style="color: #FFD43B;"></i>twitter</a>
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #e7f305;"></i>linkedin</a>
-
-  </div>
-
-
-
-
-  <div id="app">
+  <div id="app" class="container">
     <h2>İletişim Formu</h2>
-    <form id="contact-form" @submit.prevent="submitForm">
+    <div v-if="errors.length" class="alert alert-danger">
+      <ul>
+        <li v-for="error in errors" :key="error">{{ error }}</li>
+      </ul>
+    </div>
+    <form id="contact-form" @submit.prevent="submitForm" novalidate>
       <div class="form-group">
         <label for="name">Adınız:</label>
-        <input type="text" id="name" v-model="formData.name" required>
+        <input type="text" id="name" v-model="formData.name" class="form-control" placeholder="Adınızı giriniz"
+          required>
       </div>
       <div class="form-group">
         <label for="surname">Soy-Adınız:</label>
-        <input type="text" id="surname" v-model="formData.surname" required>
+        <input type="text" id="surname" v-model="formData.surname" class="form-control" placeholder="Soyadınızı giriniz"
+          required>
       </div>
       <div class="form-group">
         <label for="email">E-posta Adresiniz:</label>
-        <input type="email" id="email" v-model="formData.email" required>
+        <input type="email" id="email" v-model="formData.email" class="form-control"
+          placeholder="E-posta adresinizi giriniz" required>
       </div>
       <div class="form-group">
         <label for="gender">Cinsiyetiniz:</label><br>
-        <input type="radio" id="female" name="gender" value="kadın" v-model="formData.gender" required>
+        <input type="radio" id="female" name="gender" value="Kadın" v-model="formData.gender" required>
         <label for="female">Kadın</label>
         <input type="radio" id="male" name="gender" value="Erkek" v-model="formData.gender" required>
         <label for="male">Erkek</label>
       </div>
       <div class="form-group">
         <label for="contact-preference">Nasıl İletişime Geçmek İstersiniz:</label>
-        <select id="contact-preference" v-model="formData.contactPreference" required>
+        <select id="contact-preference" v-model="formData.contactPreference" class="form-control" required>
           <option value="">Seçiniz</option>
           <option value="email">E-posta</option>
           <option value="telefon">Telefon</option>
@@ -114,51 +103,138 @@
         </select>
       </div>
       <div class="form-group">
-        <label>Kullanabildiğiniz Yazılım Dilleri</label><br>
-        <input type="checkbox" id="hobby1" value="yoga" v-model="formData.hobbies">
+        <label for="hobbies">Kullanabildiğiniz Yazılım Dilleri</label><br>
+        <input type="checkbox" id="hobby1" value="Python" v-model="formData.hobbies">
         <label for="hobby1">Python</label><br>
-        <input type="checkbox" id="hobby2" value="yüzme" v-model="formData.hobbies">
+        <input type="checkbox" id="hobby2" value="JavaScript" v-model="formData.hobbies">
         <label for="hobby2">JavaScript</label><br>
-        <input type="checkbox" id="hobby3" value="koşu" v-model="formData.hobbies">
+        <input type="checkbox" id="hobby3" value="C++" v-model="formData.hobbies">
         <label for="hobby3">C++</label><br>
-        <input type="checkbox" id="hobby4" value="resim" v-model="formData.hobbies">
+        <input type="checkbox" id="hobby4" value="Java" v-model="formData.hobbies">
         <label for="hobby4">Java</label><br>
       </div>
       <div class="form-group">
         <label for="message">Mesajınız:</label>
-        <textarea id="message" v-model="formData.message" required></textarea>
+        <textarea id="message" v-model="formData.message" class="form-control" placeholder="Mesajınızı yazınız"
+          required></textarea>
       </div>
-      <button type="button" @click="clearForm">Temizle</button>
-      <button type="button" @click="vueValidation">Vue.js ile Kontrol</button>
-      <button type="button" @click="jsValidation">JavaScript ile Kontrol</button>
-      <button type="submit" v-if="validForm">Gönder</button>
+      <button type="button" class="btn btn-secondary" @click="clearForm">Temizle</button>
+      <button type="button" class="btn btn-primary" @click="vueValidation">Vue.js ile Kontrol</button>
+      <button type="button" class="btn btn-primary" @click="jsValidation">JavaScript ile Kontrol</button>
+      <button type="submit" class="btn btn-success" v-if="validForm">Gönder</button>
     </form>
-
-
-    <div v-if="submitted">
-      <h2>Gönderilen Bilgiler</h2>
-      <p><strong>Adı:</strong> {{ formData.name }}</p>
-      <p><strong>E-posta:</strong> {{ formData.email }}</p>
-      <p><strong>Cinsiyet:</strong> {{ formData.gender }}</p>
-      <p><strong>İletişim Tercihi:</strong> {{ formData.contactPreference }}</p>
-      <p><strong>Hobiler:</strong> {{ formData.hobbies }}</p>
-      <p><strong>Mesaj:</strong> {{ formData.message }}</p>
-    </div>
   </div>
-  <footer class="footer">
-    <p>&copy; 2024 - Muhammed can özyaşar</p>
+  <footer class="footer text-center">
+    <p>&copy; 2024 - Muhammed Can Özyaşar</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        formData: {
+          name: '',
+          surname: '',
+          email: '',
+          gender: '',
+          contactPreference: '',
+          hobbies: [],
+          message: ''
+        },
+        errors: [],
+        validForm: false
+      },
+      methods: {
+        submitForm() {
+          this.errors = [];
+          if (!this.formData.name) {
+            this.errors.push("Ad gereklidir.");
+          }
+          if (!this.formData.surname) {
+            this.errors.push("Soyad gereklidir.");
+          }
+          if (!this.formData.email) {
+            this.errors.push("E-posta gereklidir.");
+          }
+          if (!this.formData.gender) {
+            this.errors.push("Cinsiyet gereklidir.");
+          }
+          if (!this.formData.contactPreference) {
+            this.errors.push("İletişim tercihi gereklidir.");
+          }
+          if (!this.formData.message) {
+            this.errors.push("Mesaj gereklidir.");
+          }
 
+          if (!this.errors.length) {
+            localStorage.setItem('formData', JSON.stringify(this.formData));
+            window.location.href = 'goster.html';
+          }
+        },
+        clearForm() {
+          this.formData = {
+            name: '',
+            surname: '',
+            email: '',
+            gender: '',
+            contactPreference: '',
+            hobbies: [],
+            message: ''
+          };
+          this.errors = [];
+          this.validForm = false;
+        },
+        vueValidation() {
+          this.errors = [];
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!this.formData.name) {
+            this.errors.push("Ad gereklidir.");
+          }
+          if (!this.formData.surname) {
+            this.errors.push("Soyad gereklidir.");
+          }
+          if (!this.formData.email || !emailRegex.test(this.formData.email)) {
+            this.errors.push("Geçerli bir e-posta adresi gereklidir.");
+          }
+          if (!this.formData.gender) {
+            this.errors.push("Cinsiyet gereklidir.");
+          }
+          if (!this.formData.contactPreference) {
+            this.errors.push("İletişim tercihi gereklidir.");
+          }
+          if (!this.formData.message) {
+            this.errors.push("Mesaj gereklidir.");
+          }
+          this.validForm = this.errors.length === 0;
+        },
+        jsValidation() {
+          this.errors = [];
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!this.formData.name.trim()) {
+            this.errors.push("Ad gereklidir.");
+          }
+          if (!this.formData.surname.trim()) {
+            this.errors.push("Soyad gereklidir.");
+          }
+          if (!this.formData.email.trim() || !emailRegex.test(this.formData.email.trim())) {
+            this.errors.push("Geçerli bir e-posta adresi gereklidir.");
+          }
+          if (!this.formData.gender) {
+            this.errors.push("Cinsiyet gereklidir.");
+          }
+          if (!this.formData.contactPreference) {
+            this.errors.push("İletişim tercihi gereklidir.");
+          }
+          if (!this.formData.message.trim()) {
+            this.errors.push("Mesaj gereklidir.");
+          }
+          this.validForm = this.errors.length === 0;
+        }
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <script src="iletisim.js"></script>
-   
-  
-
-
+      }
+    });
+  </script>
 </body>
 
 </html>

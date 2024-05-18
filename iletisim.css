@@ -141,7 +141,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 968px) {
   #app {
     padding: 40px;
 
@@ -168,7 +168,7 @@ button:hover {
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 576px) {
 
   .form-group {
     .form-group {
@@ -232,9 +232,9 @@ button:hover {
 .navbar-brand {
   color: red;
   margin-left: 20px;
-  padding-right: 60%;
+  padding-right :5%; ;
+ 
 }
-
 .navbar-brand:hover {
 
   color: #f00;
