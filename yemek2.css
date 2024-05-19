@@ -1,44 +1,87 @@
-body {
-  background:url(resim/indir\ \(1\).jpeg);
-  background-position: center;
-  background-size: 30%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Poetsen+One&display=swap');
 
+
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  
+  background: url(resim/pexels-eberhardgross-2088170.jpg);
+  background-size: 100%;
+}
+
+
+.metin {
+
+
+  margin-top: 120px;
+  width: 65%;
+  margin-left: 1px;
+  height: max-content;
+  background: #b516ef;
+  color: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 50px;
+  padding: 80px;
+
+}
+
+.metin p {
+
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2 {
+
+
+  /* margin-left: 220px; */
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
 
 .container {
-
-  margin-top: 250px;
+  /* overflow-x: hidden; */
+  margin-top: 110px;
   flex: 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 70%;
+  height: 100%;
   padding: 50px;
   background-color: #f5f5f5;
-  box-shadow: 0 30px 50px #dbdbdb;
+  box-shadow: 0 30px 50px #49dcab;
   border-radius: 50px;
 }
 
 #slide {
+
   width: 100%;
   margin-top: 50px;
 }
 
 .item {
-
-  width: 100px;
-  height: 150px;
-  background-position: 50% 50%;
+  width: 120px;
+  height: 250px;
+  background-position: center;
   display: inline-block;
-  transition: 0.7s;
+  transition: 0.8s;
   background-size: cover;
   position: absolute;
-  top: 15%;
+  top: 20%;
+  
   transform: translate(0, -50%);
   border-radius: 20px;
-  box-shadow: 0 5px 5px #2c52fa;
+  box-shadow: 0 5px 5px #2c6afa;
 }
 
 .item:nth-child(1),
@@ -46,7 +89,7 @@ body {
   left: 0;
   top: 0;
   transform: translate(0, 0);
-  border-radius: 20px;
+  border-radius: 0;
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 5px #2cfad8;
@@ -55,45 +98,44 @@ body {
 }
 
 .item:nth-child(3) {
-  left: 77%;
+  left: 55vw;
 }
 
 .item:nth-child(4) {
-  left: calc(77% + 100px);
+  left: 60vw;
 }
 
 .item:nth-child(5) {
-  left: calc(75% + 220px);
+  left: 65vw;
 }
 
 .item:nth-child(n+6) {
-  left: calc(10% + 660px);
+  left: 70vw;
   opacity: 0;
 }
 
 .item .content {
   position: absolute;
-  top: calc(100% + 20px);
+  top: 700px;
   left: 10%;
-  width: 80%;
+  width: 300px;
   text-align: left;
-  color: #f7f7f7;
-  padding: 8px;
+  color: #eee;
+  padding: 20px;
+  background: #000;
   border-radius: 20px;
+  opacity: 0.9;
   transform: translate(0, -50%);
-  background: #f075b4;
   display: none;
   box-shadow: 0 4px 15px #e410e8;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .item:nth-child(2) .content {
   display: block;
   z-index: 1;
 }
-
-
-
 
 .item .name {
   font-size: 40px;
@@ -105,6 +147,7 @@ body {
 .item .des {
   margin: 20px 0;
   opacity: 0;
+  font-size: large;
   animation: showcontent 1s ease-in-out 0.3s 1 forwards;
 }
 
@@ -112,7 +155,7 @@ body {
   padding: 10px 20px;
   border: none;
   opacity: 0;
-  animation: showcontent 0.5s ease-in-out 0.3s 1 forwards;
+  animation: showcontent 1s ease-in-out 0.6s 1 forwards;
 }
 
 
@@ -126,16 +169,16 @@ body {
   to {
     opacity: 1;
     transform: translate(0, 0);
-    filter: blur();
+    filter: blur(0);
   }
 }
 
 .buttons {
   position: absolute;
-  bottom: 5px;
+  bottom: 40px;
+  z-index: 1;
+  text-align: center;
   width: 100%;
-  padding-left: 80%;
-  margin-right: 50px;
 }
 
 .buttons button {
@@ -155,82 +198,16 @@ body {
 .navbar-brand {
   color: red;
   margin-left: 20px;
-  padding-right :5%; ;
- 
-}
-.nav-item a:hover {
-
-  color: #f00;
-  font-size: large;
-
+  padding-right: 5%;
+  ;
 
 }
 
 .navbar-brand:hover {
 
-  color: red;
+  color: #f00;
   text-shadow: 2px 2px 5px rgb(146, 248, 221);
   animation: colorchange 2s infinite;
-}
-
-.container0 {
-  width: 70%;
-  background: #131616;
-  height: max-content;
-  margin-left: 3%;
-  color: aliceblue;
-  border-radius: 20px;
-  padding: 60px;
-  margin-top: 70px;
-  margin-bottom: 100px;
-}
-
-.container0 p {
-
-  font-size: larger;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.card-text {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-
-
-
-}
-
-.col-md-4 {
-  border-radius: 50px;
-  width: 100%;
-  height: fit-content;
-}
-
-.col-md-4 img {
-
-  width: 100%;
-  height: 100%;
-
-
-}
-.card-body{
-
-  background: #e4dede;
-}
-
-
-.soz1 {
-  color: #fff;
-  margin-top: 70px;
-  margin-left: 1%;
-  width: 80%;
-  background: #099483;
-  border: 2px solid rgba(169, 176, 25, 0.951);
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-
 }
 
 @keyframes colorchange {
@@ -247,30 +224,19 @@ body {
   }
 }
 
-.tarihi-ayrinti {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.resim0 {
-  flex: 1;
-  text-align: right;
-  padding-right: 20px;
-}
 
-.metin {
-  flex: 1;
-  text-align: left;
-  padding-left: 20px;
-}
 
-img {
-  max-width: 10%;
+.gastronomi img {
+  margin-top: 50px;
+  margin-left: 3%;
+  border-radius: 10px;
+  width: 30%;
   height: auto;
+
+
+
 }
-
-
 
 
 .footer {
@@ -280,99 +246,77 @@ img {
   bottom: 0;
   background-position: center;
   width: 100%;
-
+  margin-top: 750px;
 }
 
 
 
 @media (max-width: 500px) {
-
-  .container0 {
-
-
-    width: 96%;
-    margin-left: 2%;
-    padding: 25px;
-  }
-
-  .container0 p {
-
-    font-size: 17px;
-
-
-  }
-
-  .soz1 {
-
-  
-    width: 92%;
-
-
-
-  }
-
-  .soz1 h2 {
-
-    font-size: 19px;
-
-
-  }
-
-
   .container {
+
+    margin-top: 400px;
+    max-width: 400px;
+    height: 600px;
+    border-radius: 20px;
     margin-left: 0px;
-    margin-top: 200px;
-    max-width: 90%;
+
+
+  }
+
+  .gastronomi img {
+    margin-top: 50px;
+    margin-left: 4%;
+    border-radius: 17px;
+    width: 70%;
 
 
 
   }
 
-  .container0 {
-    width: 90%;
-    margin-bottom: 100px;
-  }
 
   .item .content {
-
-
-    width: 100%;
-    margin-top: 100px;
+    width: 80%;
     height: fit-content;
     padding: 20px;
-    margin-left: -40px;
+    box-shadow: none;
+
   }
 
-  .buttons {
+  .metin {
 
-    margin-left: -85%;
+    width: 90%;
+    margin-left: 2%;
+    padding: 20px;
+    font-size: 15px;
+
+
   }
 
   .item {
 
-
     width: 80px;
     display: flex;
+    height: 120px;
+
     margin-left: 10px;
 
   }
 
 
   .item:nth-child(3) {
-    left: 7%;
+    margin-top: -200px;
+    left: 8%;
   }
 
   .item:nth-child(4) {
+    margin-top: -220px;
     left: calc(7% + 50px);
   }
 
   .item:nth-child(5) {
-    left: calc(7% + 40px);
+    margin-top: -200px;
+
+    left: calc(7% + 80px);
   }
-
-
-
-
-
 
 }

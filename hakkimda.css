@@ -100,7 +100,8 @@ hr {
 .footer {
 
     text-align: right;
-    padding: 8px;
+    padding: 4px;
+    font-weight: 500;
     background: url(resim/hob4.jpg);
     background-position: center;
     margin-top: 50px;
@@ -111,7 +112,8 @@ hr {
 .navbar-brand {
     color: red;
     margin-left: 20px;
-    padding-right: 60%;
+    padding-right :5%; ;
+   
 }
 
 .navbar-brand:hover {

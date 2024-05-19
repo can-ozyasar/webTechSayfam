@@ -1,12 +1,13 @@
 body {
-  background:url(resim/indir\ \(1\).jpeg);
+  background:url(resim/abstract_pattern_design_background_2007.jpg);
   background-position: center;
-  background-size: 30%;
+  background-size: 70%;
+  overflow-x: hidden;
   }
 
 
 .container {
-
+  z-index: -1;
   margin-top: 250px;
   flex: 1;
   position: absolute;
@@ -131,11 +132,12 @@ body {
 }
 
 .buttons {
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  padding-left: 80%;
-  margin-right: 50px;
+  display: flex;
+  position:absolute;
+  top: 700px;
+  left: calc(50% - 50px);
+  z-index: 1000;
+  margin-top: 70px;
 }
 
 .buttons button {
@@ -286,6 +288,7 @@ img {
 
 
 @media (max-width: 500px) {
+  
 
   .container0 {
 
@@ -343,10 +346,6 @@ img {
     margin-left: -40px;
   }
 
-  .buttons {
-
-    margin-left: -85%;
-  }
 
   .item {
 

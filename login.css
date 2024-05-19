@@ -26,8 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(resim/ai-generated-8662021_1920.jpg) no-repeat;
-    background-size: cover;
+    background: url(resim/water-3354067_1920.jpg) ;
+    background-size: 70%;
 
 }
 
@@ -163,21 +163,21 @@ body {
 .footer {
 
     width: 100%;
-    font-size: large;
     text-align: right;
+    font-weight: 500;
     padding: 4px;
     background: url(resim/hob4.jpg);
     background-position: center;
     position: fixed;
     bottom: 0px;
-    opacity: 0.8;
 }
 
 
 .navbar-brand {
     color: red;
     margin-left: 20px;
-    padding-right: 60%;
+    padding-right :5%; ;
+   
 }
 
 .navbar-brand:hover {
@@ -218,6 +218,7 @@ body {
     .cerceve {
         width: 90%;
         margin-top: 120px;
+        margin-bottom: 100px;
     }
 }
 
@@ -227,7 +228,8 @@ body {
 
     .cerceve {
         margin-top: 150px;
-        width: 70%;
+        width: 60%;
+        margin-bottom: 150px;
 
     }
 }

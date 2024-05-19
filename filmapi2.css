@@ -13,6 +13,7 @@ body{
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 
@@ -72,6 +73,20 @@ body{
   color: #f00;
   text-shadow: 2px 2px 5px rgb(146, 248, 221);
   animation: colorchange 2s infinite;
+}
+
+@keyframes colorchange {
+  0% {
+    color: rgb(40, 206, 15);
+  }
+
+  50% {
+    color: rgb(252, 29, 29);
+  }
+
+  100% {
+    color: rgba(127, 243, 11, 0.782);
+  }
 }
 
 .footer {

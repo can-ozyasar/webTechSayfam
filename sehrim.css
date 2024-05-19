@@ -1,15 +1,14 @@
 /* Carousel container */
 body{
 
-
-    background:url(resim2/pexels-hngstrm-1939485\ \(1\).jpg );
+    background:url(resim/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg );
     background-size: contain;
 }
 
 
 
 #carouselExampleRide {
-    width: 60%;
+    width: 63%;
     margin-left: 20%;
     margin: 0 auto;
     max-height: 600px;
@@ -45,9 +44,9 @@ body{
 .container {
     margin-top: 110px;
     width: 70%;
-    background: #010101;
+    background: #7366d2;
     height: max-content;
-    margin-left: 3%;
+    margin-left: 2%;
     color: aliceblue;
     border-radius: 20px;
     padding: 60px;
@@ -65,7 +64,7 @@ body{
     margin-top: 70px;
     margin-left: 1%;
     width: 80%;
-    background: #a3a0a4;
+    background: #d59de7;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -103,12 +102,9 @@ body{
 
 
 .footer {
-
-    font-size: large;
     text-align: right;
     padding: 4px;
     font-weight: 500;
-    ;
     background: url(resim/hob4.jpg);
     background-position: center;
 
@@ -123,15 +119,19 @@ body{
     .container {
         margin-left: 2px;
         width: 87%;
+        padding: 22px;
     }
 
+#mna{
 
+    background: #000;
+}
 
 
 
     #carouselExampleRide {
-        width: 86%;
-        margin-left: 7%;
+        width: 89%;
+        margin-left: 5%;
         margin-top: 100px;
 
     }
@@ -155,12 +155,13 @@ body{
 
 }
 
-;
+
 
 .navbar-brand {
     color: red;
     margin-left: 20px;
-    padding-right: 60%;
+    padding-right :5%; ;
+   
 }
 
 .navbar-brand:hover {

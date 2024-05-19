@@ -1,11 +1,49 @@
-body {
-  background-color: #eee;
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Poetsen+One&display=swap');
+
+
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
+.metin {
+
+
+  margin-top: 120px;
+  width: 65%;
+  margin-left: 1px;
+  height: max-content;
+  background: #b516ef;
+  color: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 50px;
+  padding: 80px;
+
+}
+
+.metin p {
+
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2 {
+
+
+  margin-left: 220px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
 
 .container {
-  margin-top: 70px;
+  margin-top: 110px;
   flex: 1;
   position: absolute;
   left: 50%;
@@ -24,7 +62,7 @@ body {
 }
 
 .item {
-  
+
   width: 200px;
   height: 300px;
   background-position: 50% 50%;
@@ -47,7 +85,7 @@ body {
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 5px #2cfad8;
-  
+
 
 }
 
@@ -85,6 +123,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .item:nth-child(2) .content {
   display: block;
   z-index: 1;
@@ -100,6 +139,7 @@ body {
 .item .des {
   margin: 20px 0;
   opacity: 0;
+  font-size: large;
   animation: showcontent 1s ease-in-out 0.3s 1 forwards;
 }
 
@@ -150,7 +190,8 @@ body {
 .navbar-brand {
   color: red;
   margin-left: 20px;
-  padding-right: 60%;
+  padding-right :5%; ;
+ 
 }
 
 .navbar-brand:hover {
@@ -174,6 +215,21 @@ body {
   }
 }
 
+
+
+
+.gastronomi img {
+  margin-top: 50px;
+  margin-left: 3%;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+
+
+
+}
+
+
 .footer {
   text-align: right;
   padding: 8px;
@@ -183,3 +239,89 @@ body {
   width: 100%;
   margin-top: 750px;
 }
+
+
+
+@media (max-width: 500px) {
+  .container {
+  
+    margin-top: 400px;
+   max-width: 400px; 
+height:600px;
+border-radius: 20px; 
+ margin-left: 0px;
+
+
+  }
+
+  .gastronomi img {
+    margin-top: 50px;
+    margin-left: 4%;
+    border-radius: 17px;
+    width: 70%;
+
+
+
+  }
+
+
+  .item .content {
+
+
+    width: 95%;
+    margin-left: 25%;
+    margin-top: 430px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: none;
+
+  }
+
+  .buttons {
+
+    margin-left: 10%;
+
+
+  }
+
+
+  .metin {
+
+    width: 90%;
+    margin-left: 2%;
+    padding: 20px;
+    font-size: 15px;
+
+
+  }
+
+  .item {
+
+    width: 80px;
+    display: flex;
+    height: 120px;
+
+    margin-left: 10px;
+
+  }
+
+
+  .item:nth-child(3) {
+    margin-top: -400px;
+    left: 7%;
+  }
+
+  .item:nth-child(4) {
+    margin-top: -430px;
+    left: calc(7% + 50px);
+  }
+
+  .item:nth-child(5) {
+    margin-top: -400px;
+
+    left: calc(7% + 80px);
+  }
+
+}
+
+

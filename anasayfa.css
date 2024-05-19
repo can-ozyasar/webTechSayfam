@@ -7,9 +7,6 @@
     font-style: normal;
   }
 
-
-
-
   .playpen-sans {
     font-family: "Playpen Sans", cursive;
     font-optical-sizing: auto;
@@ -29,8 +26,15 @@
     font-style: normal;
   }
   
+ 
   
-  
+  .nav-item a:hover{
+
+    color: #f00;
+ font-size: large;
+    
+     
+ }  
 
 .profildiv {
 
@@ -45,7 +49,7 @@
     background: url(resim/ai-generated-8630058_1920.jpg);
     background-position: center;
     padding-top: 40px;
-    background-size: 150%;
+    background-size: 70%;
 }
 
 body {
@@ -193,26 +197,47 @@ body {
 }
 
 .container {
-    width: 90%;
-    margin-left: 5%;
+    width: 84%;
+    margin-left: 8%;
     margin-top: 70px;
     height: fit-content;
-    background: transparent;
+
     border: 1px solid rgba(255, 25, 2555, .1);
-    backdrop-filter: blur(30px);
+     background: transparent;
+     backdrop-filter: blur(48px);
     box-shadow: 0 0 10px rgb(176, 226, 214);
-    padding: 20px;
+    padding: 30px;
+    border-radius: 50px;
     
 
 }
 
 .container p {
 
-    font-weight: 400;
-    color: #000000;
+    font-weight: 600;
+    color: #030309;
     font-family: system-ui, -apple-system, BlinkMacSystemFont ,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
+
+
+
+/* Arkaplan rengi */
+#accordionExample .accordion-item {
+    background-color: #aed0ef; /* Örnek renk */
+}
+
+/* Başlık rengi */
+#accordionExample .accordion-button {
+    background-color: #b33ce2; /* Örnek renk */
+    color: #fff; /* Örnek renk */
+}
+
+/* Aktif başlık rengi */
+#accordionExample .accordion-button:not(.collapsed) {
+    background-color: #e93fc4; /* Örnek renk */
+}
+
 
 .slider {
 
@@ -225,11 +250,13 @@ body {
     height: 515px;
     overflow: hidden;
     position: relative;
+    border-radius: 30px;
 }
 
 .resimler {
     display: flex;
     justify-content: space-between;
+    background-size: contain;
 image-rendering: cr;
     transition: transform 0.7s ease;
 
@@ -253,6 +280,7 @@ image-rendering: cr;
     margin-left: 20%;
 }
 
+
 .ileri {
 
     background-color: #23b1d1;
@@ -267,24 +295,33 @@ image-rendering: cr;
     color: black;
 }
 
-.footer {
-    font-family: "Reenie Beanie", cursive;
-    font-weight: 400;
-    font-size: xx-large;
-    font-style: normal;
+.accordion{
+    
+margin-top: 80px;
+width: 70%;
+margin-left: 15%;
 
+}
+
+
+.footer {
+    
     text-align: right ;
+    font-weight: 500;
      padding: 4px;
     background: url(resim/hob4.jpg);
     background-position: center;
     margin-top: 50px;
+    
 }
 
 .navbar-brand {
     color: red;
     margin-left: 20px;
-    padding-right: 60%;
+    padding-right :5%; ;
+   
 }
+
 
 .navbar-brand:hover {
 
@@ -310,6 +347,8 @@ image-rendering: cr;
 
 @media (max-width: 450px) {
 
+   
+
     .profildiv {
 
         background-size: 190%;
@@ -323,13 +362,6 @@ image-rendering: cr;
         height: 200px;
 
     }
-
-
-
-
-
-
-
 
 
 
